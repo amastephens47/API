@@ -42,9 +42,7 @@ fetch('https://ghibliapi.herokuapp.com/films')
   })
 
 data.forEach(movie => {
-  //if (request.status >= 200 && request.status < 400) {
-   // data.forEach(movie => {
-      const card = document.createElement('div')
+        const card = document.createElement('div')
       card.setAttribute('class', 'card')
   
 //create a card for each movie
@@ -63,12 +61,6 @@ data.forEach(movie => {
       card.appendChild(h1)
       card.appendChild(p)
 //put it all together: card with title and movie description
-//    })
-//  } else {
-//    const errorMessage = document.createElement('marquee')
-//    errorMessage.textContent = `Uh-oh, nothing here.`
- //   app.appendChild(errorMessage)
- // }
+
 })
-//if data is not returned, give an error message
-//request.send()
+
