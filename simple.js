@@ -42,7 +42,7 @@ fetch('https://ghibliapi.herokuapp.com/films')
   })
 
 data.forEach(movie => {
-        const card = document.createElement('div')
+      const card = document.createElement('div')
       card.setAttribute('class', 'card')
   
 //create a card for each movie
@@ -55,12 +55,11 @@ data.forEach(movie => {
       const p = document.createElement('p')
       movie.description = movie.description.substring(0, 300)
       p.textContent = `${movie.description}...`
-//ormat the movie description in p tag
+//format the movie description in p tag
 
       container.appendChild(card)
       card.appendChild(h1)
       card.appendChild(p)
-//put it all together: card with title and movie description
 
 })
 
