@@ -29,8 +29,8 @@ fetch('https://ghibliapi.herokuapp.com/films')
 //format the movie title in H1 tag
 
       const p = document.createElement('p')
-      movie.description = movie.description.substring(0, 300)
-      p.textContent = `${movie.description}...`
+      movie.description = movie.description.substring(0, 1000)
+      p.textContent = `${movie.description}`
 //format the movie description in p tag
 
       container.appendChild(card)
